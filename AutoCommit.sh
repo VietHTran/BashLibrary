@@ -9,20 +9,28 @@ then
 	exit 1
 fi
 
+
 #Initialize extension dictionary, allow user to choose which file types to commit
 declare -A addEx
+function watch {
+	addEx["$1"]="0"
+}
+
 function initdict {
-        addEx["sh"]="0"
-        addEx["c"]="0"
-        addEx["cpp"]="0"
-        addEx["h"]="0"
-        addEx["java"]="0"
-        addEx["py"]="0"
-        addEx["pyc"]="0"
-        addEx["xml"]="0"
-        addEx["cs"]="0"
-        addEx["xaml"]="0"
-        addEx["txt"]="0"
+	watch "sh"
+        watch "c"
+        watch "cpp"
+        watch "h"
+	watch "java"
+	watch "py"
+	watch "pyc"
+	watch "xml"
+	watch "cs"
+	watch "xaml"
+	watch "txt"
+	watch "gitignore"
+	watch "lib"
+	watch "dll"
 }
 
 #Check file's extension
