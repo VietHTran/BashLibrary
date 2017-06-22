@@ -17,10 +17,9 @@ function watch {
 }
 
 function initdict {
-	watch "sh"
-        watch "c"
-        watch "cpp"
-        watch "h"
+    watch "c"
+    watch "cpp"
+    watch "h"
 	watch "java"
 	watch "py"
 	watch "pyc"
@@ -28,6 +27,7 @@ function initdict {
 	watch "cs"
 	watch "xaml"
 	watch "txt"
+	watch "sh"
 	watch "gitignore"
 	watch "lib"
 	watch "dll"
